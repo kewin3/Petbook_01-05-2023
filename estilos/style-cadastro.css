@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Note Sans', sans-serif;
+    background: #514869;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+a > img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-principal {
+    width: 50%;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.cadastro {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.cadastro > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.cadastro > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.main-principal > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.btn-cadastro {
+    width: 45%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-cadastro > a {
+    text-decoration: none;
+    color: #2b134b;
+}
+
+@media only screen and (max-width: 950px){
+    .main-principal{
+        width: 85%;
+    }
+    body a img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    
+    .main-principal > h1 {
+        font-size: 20pt;
+    }
+
+    body a img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
